@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--declaración del tipo de documento-->
+<html lang=es>
+<!--etiqueta de apertura que identifica el idioma de la página en español-->
+
+<head>
+    <meta charset=”UTF-8”>
+    <!--contenido o elementos html -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/Estilos.css">
+    <!--enlazado del archivo css y definicion de la relación de este y su tipo-->
+    <title>Portada Biblioteca</title>
+    <!--titulo de la pestaña-->
+</head>
+
+<body>
+
+    <div id="barranav">
+        <!--Imagen de encabezado-->
+        <img id="encab" SRC="assets/img/backnav.jpg" alt="no se pudo cargar la imagen">
+        <nav>
+            <!--Menu de navegación-->
+            <ul class="menu contnav">
+                <a class="elemnav middle" href="./Index.html">Inicio</a>
+                <a class="elemnav middle" href="./Catalogo.html">Catálogo</a>
+                <div class="dropdown elemnav">
+                    <a class="middle" href="#">Temáticas</a>
+                    <!--Dropdown menu-->
+                    <div class="dropdown-content">
+                        <a class="middle" href="#">Programación</a>
+                        <a class="middle" href="#">Redes</a>
+                        <a class="middle" href="#">Novelas</a>
+                        <a class="middle" href="#">Historia</a>
+                        <a class="middle" href="#">Geografía</a>
+                    </div>
+                </div>
+                <a class="elemnav middle" href="./Usuarios.html">Ingreso</a>
+            </ul>
+        </nav>
+    </div>
+    <!--encabezado del documento-->
+    <header id="title">¡Bienvenido a la biblioteca virtual!</header>
+    <!--Contenido de la página, con dos contenedores hijos-->
+    <div class="contparr">
+        <div class="elemparr">
+            <img class="imgbody" src="assets/img/imgini.jpg">
+            <p class="parrtext" >Puedes explorar el catálogo de nuestros recursos en cualquier momento y desde cualquier dispositivo,
+                sin embargo para registrarte como nuevo usuario debes completar el formulario de registro con tus datos
+                personales, en caso de ser menor de edad acude a un mayor. En cuanto tengas un usuario validado podrás
+                realizar reservas, acceder a las instalaciones y usar el material de estudio de la biblioteca, todo
+                esto acompañado por una tarjeta de identificación asombrosa. Para más información puedes contactarnos
+                por vía telefónica o
+                escribirnos a los correos proporcionados o envíanos un mensaje a nuestras redes sociales.
+            </p>
+            <a href="#"><img class="imgbody" src="assets/img/catálogo.jpg"></a>
+        </div>
+        <div id="panel" class="elemparr">
+            <div class="img__wrap">
+                <a><img class="imgpanel" src="assets/img/imgright1.jpg"></a>
+                <a href="#" class="img__description text">Portal escolar</a>
+            </div>
+            <div class="img__wrap ">
+                <a><img class="imgpanel" src="assets/img/imgright2.jpg"></a>
+                <a href="#" class="img__description text">Concursos de literatura</a>
+            </div>
+            <div class="img__wrap ">
+                <a><img class="imgpanel" src="assets/img/imgright3.jpg"></a>
+                <a href="#" class="img__description text">¿Libros que no usas? ¡Tenemos un lugar!</a>
+            </div>
+            <div class="img__wrap ">
+                <a><img class="imgpanel" src="assets/img/imgright4.jpg"></a>
+                <a href="#" class="img__description text">Cine escolar</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--pie de página con información del autor-->
+    <footer>
+        <a>Autor: Brito Germán</a>
+        <p><a href="mailto:german.britoavda@hotmail.com">german.britoavda@hotmail.com</a></p>
+    </footer>
+</body>
+
+</html>

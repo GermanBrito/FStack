@@ -1,0 +1,178 @@
+/*tamaño de la caja para quitar los bordes*/ 
+* { box-sizing: border-box; padding: 0; margin: 0; } 
+
+/*selectores de id*/
+#encab{
+  height: 100px;
+  width: 100%;
+}
+
+#title{
+  font-size: 28px;
+  padding: 30px 0px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#panel{
+  width: 400px;
+}
+
+#login{
+  text-align: right;
+}
+
+.imgbody {
+  width: 100%;
+  object-fit: contain;
+}
+
+.imgpanel {
+  width: 100%;
+  object-fit: contain;
+  }
+
+/*underline cuando posicionamos el cursor*/
+a.middle{
+  position: relative;
+  text-decoration-line: none;
+  color: rgb(0, 0, 0);
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(14, 159, 243);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/*contenedores flexbox*/
+.contnav {      
+  display: flex;
+  flex-flow: row wrap; 
+  align-items: flex-end;
+  height:60px;
+  background-color: white; 
+  box-shadow: 0 4px 20px 0 rgb(0, 0, 0);
+}
+
+.elemnav {    
+  text-align: center;   
+  font-weight: 600;
+  font-size: 20px;
+  width: 15%;
+  height: 40%;
+  margin-bottom: 5px;
+}
+
+.contparr {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.elemparr {
+  text-align: left;
+  font-size: 16px;
+  width: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*Menú desplegable*/
+
+/* Contenedor para el menu desplegable */
+.dropdown {
+  display: column;
+  padding-bottom: 5px;
+  width: 15%;
+}
+
+/* Contenido oculto del menu desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:15%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links dentro del menu */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Cambiar los colores de los elementos dentro del menu */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* hover para mostrar contenido cuando se posicione el cursor */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  background-image: linear-gradient(to right,white, rgb(106, 138, 106));
+}
+
+p {
+  width: 100%;
+}
+
+/* mostrar texto cuando posiciono el cursor sobre una imagen */
+
+.img__wrap {
+  position:relative;
+  margin-bottom: 50px;
+
+}
+
+.img__description {
+  position:absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0;
+  background: rgba(121, 115, 115, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* efecto de transición */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text {
+  text-align:center;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.parrtext { 
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
